@@ -51,14 +51,15 @@ class Matrix:
 if __name__ == "__main__":
     while True:
         try:
-            length = int(input("Введіть розмірність матриць А і В: "))
+            user_input = input("Введіть розмірність квадратних матриць A i B: ")
+            length = int(user_input)
             if length <= 0:
                 print("Розмір матриці має бути більше 0. Введіть інше число.")
                 continue
             break
         except ValueError:
             print("Ви ввели текст замість числа. Введіть натуральне число.")
-
+            
 matrix = Matrix()
 matrix.set_data(length)
 
