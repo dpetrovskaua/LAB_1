@@ -60,18 +60,18 @@ if __name__ == "__main__":
         except ValueError:
             print("Ви ввели текст замість числа. Введіть натуральне число.")
             
-matrix = Matrix()
-matrix.set_data(length)
-
-print(f"\n{'Матриця А':<{length * 4}}   {'Матриця В'}")
-for i in range(length):
-    print(matrix.A[i], "   ", matrix.B[i])
-
-matrix.multiply()
-
-print("\nРезультат множення (Матриця С):")
-for row in matrix.C:
-    print(row)
-
-result_avg = matrix.get_avarege()
-print(f"\nСереднє значення елементів матриці С: {result_avg}")
+    matrix = Matrix()
+    matrix.set_data(length)
+    
+    print(f"\n{'Матриця А':<{length * 4}}   {'Матриця В'}")
+    for i in range(length):
+        print(matrix.A[i], "   ", matrix.B[i])
+    
+    matrix.multiply()
+    
+    print("\nРезультат множення (Матриця С):")
+    for row in matrix.C:
+        print(row)
+    
+    result_avg = matrix.get_avarege()
+    print(f"\nСереднє значення елементів матриці С: {result_avg}")
